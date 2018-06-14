@@ -1,11 +1,10 @@
 package main
 
 import (
+	"github.com/gorilla/mux"
 	"github.com/vladmashtak/restapi/controllers"
 	"log"
 	"net/http"
-	"fmt"
-	"github.com/gorilla/mux"
 )
 
 func main() {
@@ -19,6 +18,6 @@ func main() {
 	router.HandleFunc("/api/books/{id}", bookController.UpdateBook).Methods(http.MethodPut)
 	router.HandleFunc("/api/books", bookController.DeleteBook).Methods(http.MethodDelete)
 
-	fmt.Println("Server start at port " + port)
+	log.Println("Server start at port " + port)
 	log.Fatal(http.ListenAndServe(port, router))
 }

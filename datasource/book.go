@@ -1,9 +1,9 @@
 package datasource
 
-import "github.com/vladmashtak/restapi/datamodel"
+import "github.com/vladmashtak/restapi/datamodels"
 
 // ToDo implement DB connection
-var Books []datamodel.Book = []datamodel.Book{
-	{"1", "234234", "Book One", &datamodel.Author{"Vlad", "Mashtak"}},
-	{"2", "234677", "Book Two", &datamodel.Author{"Dima", "Drav4enko"}},
+var Books []datamodels.Book = []datamodels.Book{
+	{"1", "234234", "Book One", &datamodels.Author{"Vlad", "Mashtak"}},
+	{"2", "234677", "Book Two", &datamodels.Author{"Dima", "Drav4enko"}},
 }

@@ -1,4 +1,4 @@
-package datamodel
+package datamodels
 
 type Author struct {
 	FirstName	string	`json:"firstname"`
